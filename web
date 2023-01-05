@@ -66,3 +66,72 @@
 <p>This is some text outside the div element</p>
 </body>
 </html>
+
+4.html
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Add Two Numbers</title>
+<script>
+    var numOne=10;
+    var numTwo=20;
+    var sum=numOne+numTwo;
+    document.write("Sum="+sum);
+</script>
+</head>
+<body>    
+</body>
+</html>
+
+5.html
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Add Two Numbers</title>
+<script>
+    function add()
+    {
+        var numOne,numTwo,sum;
+        numOne=parseInt(document.getElementById("first").value);
+        numTwo=parseInt(document.getElementById("second").value);
+        sum=numOne+numTwo;
+        document.getElementById("answer").value=sum;
+    }
+    </script>
+</head>
+<body> 
+    <p>Enter the first number:<input id="first"></p> 
+    <p>Enter the second number:<input id="second"></p> 
+    <button onclick="add()">Add</button>
+    <p>sum=<input id="answer"></p>
+     </body>
+</html>
+
+6.html
+<!DOCTYPE html>
+ <html>
+    <body>
+        <p>Click the button to get your coordinates.</p>
+        <button onclick="getLocation()">Try It</button>
+        <p id="demo"></p>
+        <script>
+            var x=document.getElementById("demo");
+            function getLocation(){
+                if(navigator.geolocation){
+                    navigator.geolocation.getCurrentPosition(showPosition);
+                }
+                else{
+                    x.innerHTML="Geolocation is not supported by this browser.";
+                }
+            }
+            function showPosition(position){
+                x.innerHTML="Latitude:"+position.coords.latitude+
+                "<br>Longitude:"+position.coords.longitude;
+            }
+        </script>
+    </body>
+ </html>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     <!DOCTYPE html>
+7.html                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      <html>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
+              
+
